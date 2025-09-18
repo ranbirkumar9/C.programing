@@ -1,17 +1,14 @@
 #include <stdio.h>
+
 int main() {
-    int maths, physics, chemistry, total, mp_total;
-    printf("Enter marks in Maths, Physics and Chemistry: ");
-    scanf("%d %d %d", &maths, &physics, &chemistry);
+    int a, b, c, sum;
 
-    total = maths + physics + chemistry;
-    mp_total = maths + physics;
+    printf("Enter three numbers separated by commas: ");
+    scanf("%d,%d,%d", &a, &b, &c);
 
-    if (maths >= 65 && physics >= 55 && chemistry >= 50 &&
-       (total >= 190 || mp_total >= 140)) {
-        printf("The candidate is eligible.\n");
-    } else {
-        printf("The candidate is not eligible.\n");
-    }
+    sum = a + b + c;
+
+    printf("The sum of three numbers: %d\n", sum);
+
     return 0;
 }

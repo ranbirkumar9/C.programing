@@ -1,16 +1,15 @@
 #include <stdio.h>
+#define PI 3.14159
+
 int main() {
-    int m, n;
-    printf("Enter value of m: ");
-    scanf("%d", &m);
+    float radius, volume;
 
-    if (m > 0)
-        n = 1;
-    else if (m == 0)
-        n = 0;
-    else
-        n = -1;
+    printf("Enter radius of sphere: ");
+    scanf("%f", &radius);
 
-    printf("n is %d\n", n);
+    volume = (4 * PI * radius * radius * radius) / 3;
+
+    printf("The volume of sphere is: %.6f\n", volume);
+
     return 0;
 }

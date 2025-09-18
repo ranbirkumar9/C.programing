@@ -1,13 +1,14 @@
 #include <stdio.h>
-int main() {
-    int year;
-    printf("Enter a year: ");
-    scanf("%d", &year);
 
-    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-        printf("%d is a leap year.\n", year);
-    } else {
-        printf("%d is not a leap year.\n", year);
-    }
+int main() {
+    float centigrade, fahrenheit;
+
+    printf("Enter temperature in Centigrade: ");
+    scanf("%f", &centigrade);
+
+    fahrenheit = (9 * centigrade) / 5 + 32;
+
+    printf("%.2f Centigrade = %.2f Fahrenheit\n", centigrade, fahrenheit);
+
     return 0;
 }

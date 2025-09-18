@@ -1,17 +1,16 @@
-#include <stdio.h>
-int main() {
-    int a, b, c;
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &a, &b, &c);
 
-    if (a == b && b == c) {
-        printf("All numbers are equal.\n");
-    } else if (a >= b && a >= c) {
-        printf("The largest number is %d\n", a);
-    } else if (b >= a && b >= c) {
-        printf("The largest number is %d\n", b);
-    } else {
-        printf("The largest number is %d\n", c);
-    }
+#include <stdio.h>
+
+int main() {
+    int totalMinutes, hours, minutes;
+
+    printf("Enter total minutes: ");
+    scanf("%d", &totalMinutes);
+
+    hours = totalMinutes / 60;
+    minutes = totalMinutes % 60;
+
+    printf("%d Hours, %d Minutes\n", hours, minutes);
+
     return 0;
 }
